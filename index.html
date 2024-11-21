@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Course Registration</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    .header {
+      background-color: #C36;
+      padding: 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .header img {
+      height: 40px;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Content */
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #C36;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: #C36;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #a22;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #C36;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Online Course Registration</h1>
+    <img src="https://via.placeholder.com/40" alt="Logo">
+  </div>
+
+  <div class="navbar">
+    <a href="#">Session</a>
+    <a href="#">Semester</a>
+    <a href="#">Department</a>
+    <a href="#">Course</a>
+    <a href="#">Registration</a>
+    <a href="#">Manage Students</a>
+    <a href="#">Enroll History</a>
+    <a href="#">Student Logs</a>
+    <a href="#">News</a>
+    <a href="#">Logout</a>
+  </div>
+
+  <div class="container">
+    <h2>Student Registration</h2>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="studentName">Student Name</label>
+        <input type="text" id="studentName" name="studentName" placeholder="Student Name" required>
+      </div>
+      <div class="form-group">
+        <label for="studentRegNo">Student Reg No</label>
+        <input type="text" id="studentRegNo" name="studentRegNo" placeholder="Student Reg No" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="footer">
+    Online Course Registration
+  </div>
+
+  <script>
+    const form = document.getElementById('registrationForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Form Submitted!');
+    });
+  </script>
+</body>
+</html>
